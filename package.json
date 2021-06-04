@@ -2,6 +2,7 @@
   "name": "FoodOrders",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://hamzaable.github.io/FoodOrders",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
@@ -10,14 +11,15 @@
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "save-dev": "0.0.1-security",
-    "web-vitals": "^0.2.4",
-    "homepage": "."
+    "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
  
   },
   "eslintConfig": {
@@ -40,23 +42,5 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.0"
-  },
-  "description": "Food Order App",
-  "main": "index.html",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hamzaable/FoodOrders.git"
-  },
-  "keywords": [
-    "React",
-    "useEffects",
-    "useState",
-    "useContext"
-  ],
-  "author": "Hamza Rehman Saleemi",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hamzaable/FoodOrders/issues"
-  },
-  "homepage": "https://github.com/hamzaable/FoodOrders#readme"
+}
 }
